@@ -1,0 +1,304 @@
+{
+  "theme": {
+    "colors": {
+      "primary": "#3f0d12",
+      "secondary": "#a71d31",
+      "light": "#f1f0cc",
+      "generic": "#d5bf86",
+      "cta": "#8d775f"
+    }
+  },
+  "header": {
+    "currencies": [
+      "DZD Algerian Dinar",
+      "VND Vietnamese Dong"
+    ],
+    "phone": "+91-11-4084-4599"
+  },
+  "navigation": {
+    "zodiacStones": [
+      "Blue Sapphire (Neelam)",
+      "Cats Eye",
+      "Emerald (Panna)",
+      "Hessonite (Gomed)",
+      "Pearl (Moti)",
+      "Ruby (Manik)",
+      "Red Coral (Moonga)",
+      "White Sapphire",
+      "Yellow Sapphire (Pukhraj)"
+    ],
+    "popularVedicGems": [
+      "Amethyst",
+      "Citrine (Sunela)",
+      "Fire Opal",
+      "Garnet",
+      "Iolite (Neeli)",
+      "Navratna",
+      "Opal",
+      "Peridot",
+      "Pitambari Neelam",
+      "Turquoise",
+      "White Coral",
+      "Yellow Topaz",
+      "Zircon"
+    ],
+    "exclusiveGemstones": [
+      "Alexandrite",
+      "Burmese Ruby",
+      "Colombian Emerald",
+      "Cornflower Blue Sapphire",
+      "Kashmir Blue Sapphire",
+      "No Oil Emerald",
+      "Panjshir Emerald",
+      "Padparadscha Sapphire",
+      "Paraiba Tourmaline",
+      "Pigeon Blood Ruby",
+      "Pink Sapphire",
+      "Royal Blue Sapphire",
+      "Tanzanite",
+      "Vivid Green Emerald"
+    ],
+    "otherGemstones": [
+      "Amber",
+      "Ametrine",
+      "Aquamarine",
+      "Blue Topaz",
+      "Kyanite",
+      "Lapis Lazuli",
+      "Moldavite",
+      "Moonstone",
+      "Star Ruby",
+      "Tourmaline",
+      "Spinel",
+      "Blue Zircon"
+    ],
+    "specialCollections": [
+      "Matched Pairs",
+      "Gemstone Sets",
+      "Parcel Lots",
+      "Fancy Cuts",
+      "Carved Gemstones",
+      "Coral Ganesha",
+      "GRS Certified Gemstones",
+      "GIA Certified Gemstones",
+      "Gubelin Certified Gemstones",
+      "IGI Certified Gemstones"
+    ],
+    "jewellery": [
+      "Rings",
+      "Pendants",
+      "Bracelets",
+      "Earrings",
+      "Brooches"
+    ],
+    "directLinks": [
+      "Engagement Rings",
+      "Gem Recommendation",
+      "Vault",
+      "Limited specials"
+    ]
+  },
+  "hero": {
+    "heading": "Find Your Right Gemstone",
+    "background_image": "https://images.unsplash.com/photo-1599643478514-4a4be1d3ef37?auto=format&fit=crop&q=80&w=2000",
+    "search": {
+      "weights": [
+        "Any",
+        "Below 3 carat",
+        "3-5",
+        "5-7",
+        "7-9",
+        "9 Carat+"
+      ],
+      "prices": [
+        "Any",
+        "Under Rs.10,000",
+        "10k-25k",
+        "25k-50k",
+        "50k-100k",
+        "100k+"
+      ]
+    }
+  },
+  "buy_online": {
+    "heading": "Buy Gemstones Online",
+    "subheading": "Products Of Trusted Excellence",
+    "products": [
+      {
+        "name": "Yellow Sapphire",
+        "benefit": "Divine Luck, Prosperity, Blissful Matrimony",
+        "img": "/Images/Gems/1.webp"
+      },
+      {
+        "name": "Blue Sapphire",
+        "benefit": "Great Fame, Discipline, Reverses Misfortunes",
+        "img": "/Images/Gems/2.webp"
+      },
+      {
+        "name": "Emerald",
+        "benefit": "Financial Growth, Intelligence, Good Health",
+        "img": "/Images/Gems/3.webp"
+      },
+      {
+        "name": "Ruby",
+        "benefit": "Success, Leadership, Emotional Strength",
+        "img": "/Images/Gems/4.webp"
+      },
+      {
+        "name": "Opal",
+        "benefit": "Luxury, Harmony, Relationships",
+        "img": "/Images/Gems/5.webp"
+      },
+      {
+        "name": "Pearl",
+        "benefit": "Mental Peace, Confidence, Emotional Balance",
+        "img": "/Images/Gems/6.webp"
+      },
+      {
+        "name": "Red Coral",
+        "benefit": "Courage, Vitality, Property Gains",
+        "img": "/Images/Gems/7.webp"
+      },
+      {
+        "name": "Hessonite",
+        "benefit": "Power, Victory over enemies, Quick wealth",
+        "img": "/Images/Gems/8.webp"
+      }
+    ]
+  },
+  "bestselling": {
+    "heading": "Gemstone Jewellery",
+    "subheading": "Explore Our Bestselling",
+    "categories": [
+      {
+        "name": "Rings",
+        "img": "/Images/Rings/rings.webp"
+      },
+      {
+        "name": "Pendants",
+        "img": "/Images/Pendant/pendant.webp"
+      },
+      {
+        "name": "Bracelets",
+        "img": "/Images/Bracelets/salmanKhanBracelet.webp"
+      },
+      {
+        "name": "Earrings",
+        "img": "/Images/Earrings/earring.webp"
+      }
+    ]
+  },
+  "collection": {
+    "heading": "Shop By Collection",
+    "subheading": "A Range Of Exquisite Products",
+    "items": [
+      {
+        "title": "Gemstone Pairs",
+        "img": "/Images/GemstonePairs/gp.webp"
+      },
+      {
+        "title": "Engagement Rings",
+        "img": "/Images/Rings/rings.webp"
+      },
+      {
+        "title": "Gemstone Brooches",
+        "img": "/Images/Brooches/brooch.webp"
+      },
+      {
+        "title": "Earrings",
+        "img": "/Images/Earrings/earrings.webp"
+      },
+      {
+        "title": "Salman Khan Bracelet",
+        "img": "/Images/Bracelets/salmanKhanBracelet.webp"
+      }
+    ]
+  },
+  "services": [
+    "Trusted by 1Lac+ Customers",
+    "Pooja Energization",
+    "Gemstone Recommendation",
+    "Exclusive Custom Designs + Artistic Expressions In Forms Of Jewellery"
+  ],
+  "custom_design": {
+    "heading": "Exclusive Custom Designs",
+    "steps": [
+      "Share the Idea",
+      "Get a Sketch",
+      "View in 3D",
+      "Get Mesmerized"
+    ]
+  },
+  "testimonials": {
+    "heading": "Delightful Words Of 1 Lakh+ Buyers",
+    "reviews": [
+      {
+        "text": "Beyond my expectations...",
+        "author": "Arunji"
+      },
+      {
+        "text": "Beautiful Ruby Ring!",
+        "author": "Anonymous"
+      },
+      {
+        "text": "Impressed with this service",
+        "author": "Anonymous"
+      },
+      {
+        "text": "Best quality gemstones",
+        "author": "Hessonite Buyer"
+      }
+    ]
+  },
+  "blog": {
+    "heading": "Explore Our Award Winning Blogs",
+    "posts": [
+      {
+        "title": "Astrological Benefits of Blue Sapphire (Neelam Stone)",
+        "img": "/Images/Sapphire/blueSapphire.webp"
+      },
+      {
+        "title": "What does wearing a ring on each finger symbolize?",
+        "img": "/Images/banners/ring_finger.webp"
+      }
+    ]
+  },
+  "footer": {
+    "brand_profile": [
+      "About Us",
+      "Careers",
+      "GemPundit Blog",
+      "Jewellery Designs",
+      "Gold Rate",
+      "GemPundit Reviews",
+      "Custom Jewelry",
+      "Custom Engagement Rings",
+      "Gem Lab Certification"
+    ],
+    "help": [
+      "Payment",
+      "Shipping Policy",
+      "Customs & Duties",
+      "Ring Size Guide",
+      "Buying guide",
+      "Gemstones Wholesale",
+      "Carat to Ratti Converter",
+      "FAQ’s",
+      "Terms & Conditions",
+      "Returns & Exchange",
+      "Privacy Policy",
+      "Check Order Status"
+    ],
+    "contact": {
+      "india": "+91 11 4084 4599",
+      "usa": "+1 631 201 1254",
+      "uk": "+44 20 3769 9131",
+      "address": "Gurgaon, Jaipur, USA, Germany, UK"
+    },
+    "trust_badges": [
+      "LAB CERTIFIED",
+      "COD",
+      "EASY RETURNS"
+    ]
+  }
+}
