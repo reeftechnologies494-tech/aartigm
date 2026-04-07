@@ -7,7 +7,7 @@ const Blog = ({ data }) => {
     <section className="py-24 bg-light">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-end mb-12">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -31,7 +31,7 @@ const Blog = ({ data }) => {
               className="group cursor-pointer"
             >
               <div className="overflow-hidden rounded-2xl mb-6 relative aspect-[16/9]">
-                <img 
+                <img
                   src={post.img}
                   alt={post.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"

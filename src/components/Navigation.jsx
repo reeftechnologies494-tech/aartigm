@@ -15,7 +15,7 @@ const Navigation = ({ data }) => {
   };
 
   return (
-    <nav className="fixed top-2 bg-white/30 text-black backdrop-blur-lg z-50 w-[80%] rounded-2xl mx-auto">
+    <nav className="fixed top-2 bg-white/30 text-black backdrop-blur-lg z-50 w-[90%] sm:w-[80%] rounded-2xl mx-auto">
       <div className="w-full px-2 py-2 flex justify-between items-center">
         {/* Logo Area */}
         <div className="text-black text-2xl font-bold  text-gray-6000 cursor-pointer  tracking-wide">
@@ -44,65 +44,65 @@ const Navigation = ({ data }) => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 5 }}
                   transition={{ duration: 0.3 }}
-                  className="absolute top-14  bg-white/90 -left-70 w-[70vw] shadow-xl rounded-b-md  p-6 gap-4"
+                  className="absolute top-14  bg-white/90 -left-70 sm:w-[70vw] shadow-xl rounded-b-md  p-6 gap-4"
                 >
-                 <div className="flex gap-2 justify-evenly">
-                   <div className="text-left">
-                    <h1 className="text-xl underline text-amber-800">Zodiac Stones</h1>
-                   {data.zodiacStones.map((gem, idx) => (
-                      <a
-                      href="#"
-                      key={idx}
-                      className=" text-black text-sm  hover:text-amber-700 hover:translate-x-2 transition-all duration-300 block py-1"
-                    >
-                      {gem}
-                    </a>
-                    
-                  ))}
-                  </div>
-                  <div className="flex border-l-1 p-1 flex-col">
-                    <h1 className="text-xl underline text-amber-800">Popular Vedic Gems</h1>
+                  <div className="flex gap-2 justify-evenly">
+                    <div className="text-left">
+                      <h1 className="text-xl underline text-amber-800">Zodiac Stones</h1>
+                      {data.zodiacStones.map((gem, idx) => (
+                        <a
+                          href="#"
+                          key={idx}
+                          className=" text-black text-sm  hover:text-amber-700 hover:translate-x-2 transition-all duration-300 block py-1"
+                        >
+                          {gem}
+                        </a>
 
-                  {data.popularVedicGems.map((gem, idx) => (
-                      <a
-                      href="#"
-                      key={idx+"1"}
-                      className="text-black text-sm  hover:text-amber-700 hover:translate-x-2 transition-all duration-300 block py-1"
-                    >
-                      {gem}
-                    </a>
-                    
-                  ))}
-                  </div>
-                  <div className="flex border-l-1 p-1 flex-col">
-                    <h1 className="text-xl underline text-amber-800">Exclusive Gem stones</h1>
+                      ))}
+                    </div>
+                    <div className="flex border-l-1 p-1 flex-col">
+                      <h1 className="text-xl underline text-amber-800">Popular Vedic Gems</h1>
 
-                  {data.exclusiveGemstones.map((gem, idx) => (
-                      <a
-                      href="#"
-                      key={idx+"1"}
-                      className="text-black text-sm  hover:text-amber-700 hover:translate-x-2 transition-all duration-300 block py-1"
-                    >
-                      {gem}
-                    </a>
-                    
-                  ))}
-                  </div>
-                  <div className="flex p-1 border-l-1 flex-col">
-                    <h1 className="text-xl  underline text-amber-800">Other Gem Stones</h1>
+                      {data.popularVedicGems.map((gem, idx) => (
+                        <a
+                          href="#"
+                          key={idx + "1"}
+                          className="text-black text-sm  hover:text-amber-700 hover:translate-x-2 transition-all duration-300 block py-1"
+                        >
+                          {gem}
+                        </a>
 
-                  {data.otherGemstones.map((gem, idx) => (
-                      <a
-                      href="#"
-                      key={idx+"1"}
-                      className="text-black text-sm  hover:text-amber-700 hover:translate-x-2 transition-all duration-300 block py-1"
-                    >
-                      {gem}
-                    </a>
-                    
-                  ))}
+                      ))}
+                    </div>
+                    <div className="flex border-l-1 p-1 flex-col">
+                      <h1 className="text-xl underline text-amber-800">Exclusive Gem stones</h1>
+
+                      {data.exclusiveGemstones.map((gem, idx) => (
+                        <a
+                          href="#"
+                          key={idx + "1"}
+                          className="text-black text-sm  hover:text-amber-700 hover:translate-x-2 transition-all duration-300 block py-1"
+                        >
+                          {gem}
+                        </a>
+
+                      ))}
+                    </div>
+                    <div className="flex p-1 border-l-1 flex-col">
+                      <h1 className="text-xl  underline text-amber-800">Other Gem Stones</h1>
+
+                      {data.otherGemstones.map((gem, idx) => (
+                        <a
+                          href="#"
+                          key={idx + "1"}
+                          className="text-black text-sm  hover:text-amber-700 hover:translate-x-2 transition-all duration-300 block py-1"
+                        >
+                          {gem}
+                        </a>
+
+                      ))}
+                    </div>
                   </div>
-                 </div>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -168,58 +168,87 @@ const Navigation = ({ data }) => {
       </div>
 
       {/* Mobile Menu */}
-  <AnimatePresence>
-  {mobileMenuOpen && (
-    <motion.div
-      initial={{ height: 0, opacity: 0 }}
-      animate={{ height: "calc(100vh - 72px)", opacity: 1 }}
-      exit={{ height: 0, opacity: 0 }}
-      transition={{ duration: 0.4, ease: "easeInOut" }}
-      className="
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "calc(100vh - 72px)", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+            className="
         lg:hidden 
         overflow-hidden
-        bg-white/10 
+        bg-white/10  w-[95vw] text-[1.5vh]
       "
-    >
-      <div className="overflow-y-mobile-scroll-hidden h-full overflow-y-auto px-6 py-6 flex flex-col gap-6">
-        
-        {/* Gemstones */}
-        <div>
-          <div className="font-semibold text-black mb-2">Gemstones</div>
-          <div className="flex flex-col gap-2 text-black/50 ">
-            {data.gemstones.map((gem, idx) => (
-              <a key={idx} href="#" className="translate-x-4 hover:text-black/70 hover:translate-x-2 transition">
-                {gem}
-              </a>
-            ))}
-          </div>
-        </div>
+          >
+            <div className="w-full overflow-y-mobile-scroll-hidden h-full overflow-y-auto px-6 py-6 flex flex-col gap-6">
 
-        {/* Jewellery */}
-        <div>
-          <div className="font-semibold text-gray-800 mb-2">Jewellery</div>
-          <div className=" flex flex-col gap-2 text-gray-600">
-            {data.jewellery.map((item, idx) => (
-              <a key={idx} className="translate-x-4 text-black/50 hover:translate-x-2 duration-200 hover:text-black/70" href="#">
-                {item}
-              </a>
-            ))}
-          </div>
-        </div>
+              {/* Gemstones */}
+              <div className="w-full flex flex-col items-start">
+                <div className="font-semibold text-black mb-2 ">Gemstones</div>
+                <div id="subGemStones" className="flex ml-2 gap-4 w-[90%]">
+                  <div className="flex flex-col gap-2 text-black/50 ">
+                    <h1 className="text-black/60">Popular Vedic Gems</h1>
+                    {data.popularVedicGems.map((gem, idx) => (
+                      <a key={idx} href="#" className="translate-x-4 hover:text-black/70 hover:translate-x-2 transition">
+                        {gem}
+                      </a>
+                    ))}
+                  </div>
+                  <div className="flex flex-col gap-2 text-black/50 ">
+                    <h1 className="text-black/60">Zodiac Stones</h1>
+                    {data.zodiacStones.map((gem, idx) => (
+                      <a key={idx} href="#" className="translate-x-4 hover:text-black/70 hover:translate-x-2 transition">
+                        {gem}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+                <div id="subGemStones" className="flex ml-2 gap-4 w-[90%]">
+                  <div className="flex flex-col gap-2 text-black/50 ">
+                    <h1 className="text-black/60">Exclusive Gem Stones</h1>
+                    {data.exclusiveGemstones.map((gem, idx) => (
+                      <a key={idx} href="#" className="translate-x-4 hover:text-black/70 hover:translate-x-2 transition">
+                        {gem}
+                      </a>
+                    ))}
+                  </div>
+                  <div className="flex flex-col gap-2 text-black/50 ">
+                    <h1 className="text-black/60">Other Gem Stones</h1>
+                    {data.otherGemstones.map((gem, idx) => (
+                      <a key={idx} href="#" className="translate-x-4 hover:text-black/70 hover:translate-x-2 transition">
+                        {gem}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
 
-        {/* Links */}
-        <div className="flex flex-col gap-4 font-semibold text-gray-800">
-          {data.directLinks.map((link, idx) => (
-            <a key={idx} href="#">
-              {link}
-            </a>
-          ))}
-        </div>
+              {/* Jewellery */}
+              <div>
+                <div className="font-semibold text-gray-800 mb-2">Jewellery</div>
+                <div className=" flex flex-col gap-2 text-gray-600">
+                  {data.jewellery.map((item, idx) => (
+                    <a key={idx} className="translate-x-4 text-black/50 hover:translate-x-2 duration-200 hover:text-black/70" href="#">
+                      {item}
+                    </a>
+                  ))}
+                </div>
+              </div>
 
-      </div>
-    </motion.div>
-  )}
-</AnimatePresence>
+              {/* Links */}
+              <div className="flex flex-col gap-4 font-semibold text-gray-800">
+                {data.directLinks.map((link, idx) => (
+                  <a key={idx} href="#">
+                    {link}
+                  </a>
+                ))}
+              </div>
+
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };
