@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const BuyOnline = ({ data={...content} }) => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py:5 md:py-10 lg:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <motion.h2 

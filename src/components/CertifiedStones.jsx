@@ -12,15 +12,15 @@ const CertifiedStones = () => {
   return (
     <section className="py-24 bg-white border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-6 overflow-hidden">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="flex gap-6 overflow-x-auto pb-8 scrollbar-hide snap-x"
         >
           {stones.map((stone, idx) => (
-            <div key={idx} className="min-w-[280px] md:min-w-[320px] bg-light rounded-2xl p-6 snap-center border border-transparent hover:border-gray-200 transition-colors">
-              <div className="relative aspect-square mb-6 rounded-lg overflow-hidden bg-white">
+            <div key={idx} className="min-w-[320px] md:min-w-[280px] flex flex-col justify-between bg-light rounded-2xl p-6 snap-center border border-transparent hover:border-gray-200 transition-colors">
+              <div className="relative aspect-square rounded-lg overflow-hidden bg-white">
                 <div className="absolute top-3 left-3 bg-white/90 backdrop-blur text-xs font-bold px-3 py-1 rounded-sm shadow-sm z-10 flex items-center gap-1 border border-gray-100">
                   <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span> LAB CERTIFIED
                 </div>

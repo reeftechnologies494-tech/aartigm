@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { div } from "framer-motion/client";
+import { NavLink } from "react-router-dom";
 
 const Navigation = ({ data }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -20,22 +21,23 @@ const Navigation = ({ data }) => {
   };
 
   return (
-    <nav className="fixed top-2 bg-white/30 text-black backdrop-blur-lg z-50 w-[90%] sm:w-[90%] rounded-2xl mx-auto">
-      <div className="w-full px-2 py-2 flex justify-between items-center">
+    <nav className="fixed top-2 bg-white/30 text-black backdrop-blur-lg z-50  w-[90%] sm:w-[90%] rounded-2xl mx-auto">
+      <div className="h-[10vh] w-full px-2 py-2 flex justify-between items-center">
         {/* Logo Area */}
-        <div className="text-black text-2xl font-bold  text-gray-6000 cursor-pointer  tracking-wide">
-          AARTI <span className="text-amber-600 font-light">GEMS</span> <span className="text-3xl font-primary">Mine</span>
+        <div className="h-full w-fit flex items-center overflow-hidden text-black text-2xl font-bold cursor-pointer  tracking-wide">
+          <img className="h-full rounded-2xl" src="/Images/Logo/LogoLight.webp" alt="aartigemsminelogolight" />
+          <div className=" text-xl px-1 text-[#AC8A5B]">Aarti Gems Mine</div>
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex sm:text-[12px] md:text-[14px] lg:text-[16px] bg-white/70 p-2 rounded-2xl items-center gap-8">
+        <div className="hidden text-[#AC8A5B] lg:flex sm:text-[12px] md:text-[14px] lg:text-[16px]  p-2 rounded-2xl items-center gap-8">
           {/* Gemstones Mega Menu */}
           <div
             className="relative py-2 group cursor-pointer"
             onMouseEnter={() => handleMouseEnter("gemstones")}
             onMouseLeave={handleMouseLeave}
           >
-            <span className=" hover:text-amber-700 font-medium flex items-center gap-1 transition-colors">
+            <span className="font-extralight text-[#AC8A5B] hover:text-amber-700 font-medium flex items-center gap-1 transition-colors">
               Gemstones
               <ChevronDown
                 size={14}
@@ -55,13 +57,13 @@ const Navigation = ({ data }) => {
                     <div className="text-left">
                       <h1 className="text-xl underline text-amber-800">Zodiac Stones</h1>
                       {data.zodiacStones.map((gem, idx) => (
-                        <a
+                        <NavLink
                           href="#"
                           key={idx}
                           className=" text-black text-sm  hover:text-amber-700 hover:translate-x-2 transition-all duration-300 block py-1"
                         >
                           {gem}
-                        </a>
+                        </NavLink>
 
                       ))}
                     </div>
@@ -69,13 +71,13 @@ const Navigation = ({ data }) => {
                       <h1 className="text-xl underline text-amber-800">Popular Vedic Gems</h1>
 
                       {data.popularVedicGems.map((gem, idx) => (
-                        <a
+                        <NavLink
                           href="#"
                           key={idx + "1"}
-                          className="text-black text-sm  hover:text-amber-700 hover:translate-x-2 transition-all duration-300 block py-1"
+                          className="text-[#AC8A5B] text-sm  hover:text-amber-700 hover:translate-x-2 transition-all duration-300 block py-1"
                         >
                           {gem}
-                        </a>
+                        </NavLink>
 
                       ))}
                     </div>
@@ -165,7 +167,7 @@ const Navigation = ({ data }) => {
         <div className="lg:hidden">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="  text-gray-600 p-2"
+            className="  text-gray-200 p-2"
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
